@@ -1,11 +1,23 @@
-ESP-IDF template app
-====================
+### HUB75E Driver for ESP32
+HUB75E RGB LED Matrix Panel Driver. To port, provide GPIO HAL in HUB75E_Hal.c. Current implementaion is with ESP32 IDF
 
-This is a template application to be used with [Espressif IoT Development Framework](https://github.com/espressif/esp-idf).
+```C
+int main(void) {
 
-Please check [ESP-IDF docs](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/index.html) for getting started instructions.
+	HUB75E_Init();
+	HUB75E_setDisplayBuffer(myBitmap); //Each bit represent each pixels. 1 Byte contains 8 pixels 
+	HUB75E_setDisplayBrightness(BrightnessLevel1);
+	HUB75E_setDisplayColor(Blue);
+	HUB75E_setAddressingMode(HUB75EAddressingModeABCDE);
+	while(1) {
+ 	   HUB75E_displayBufferPixels();
+        }
+}
 
-*Code in this repository is in the Public Domain (or CC0 licensed, at your option.)
-Unless required by applicable law or agreed to in writing, this
-software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
-CONDITIONS OF ANY KIND, either express or implied.*
+```
+**Configurations**
+
+HORIZONTAL_PIXELS - HUB75ELib.h (Default to 512).  
+VERTICAL_PIXEL - HUB75ELib.h (Default to 64).
+
+
