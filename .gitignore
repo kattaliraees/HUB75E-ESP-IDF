@@ -27,6 +27,7 @@
 *.so
 *.so.*
 *.dylib
+./build
 
 # Executables
 *.exe
