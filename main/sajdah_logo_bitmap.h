@@ -2,45 +2,12 @@
  * sajdah_logo_bitmap.h
  *
  *  Created on: Dec 9, 2020
- *      Author: alexandrakattali
+ *      Author: raeekattali
  */
 
 #ifndef INC_SAJDAH_LOGO_BITMAP_H_
 #define INC_SAJDAH_LOGO_BITMAP_H_
 
-/*
- *Code snippet to same bitmap array as bin file. 
-#include <stdio.h>
-#include "fatiha_bitmap1.h"
-#include "fatiha_bitmap2.h"
-#include "fatiha_bitmap3.h"
-#include "sajdah_logo_bitmap.h"
-
-int main(void) {
-
- FILE *fptr;
- if ((fptr = fopen("fathiha1.bin","wb")) == NULL){
-   printf("Error! opening file");
- }
-
- fwrite(fathiha1 ,sizeof(fathiha1),1, fptr);
- fclose(fptr);
-
- if ((fptr = fopen("fathiha2.bin","wb")) == NULL){
-   printf("Error! opening file");
- }
- fwrite(fathiha2 ,sizeof(fathiha2),1, fptr);
- fclose(fptr);
-
- if ((fptr = fopen("fathiha3.bin","wb")) == NULL){
-   printf("Error! opening file");
- }
- fwrite(fathiha3 ,sizeof(fathiha3),1, fptr);
- fclose(fptr);
-
- return 0;
-}
-*/
 
 // 'sajdah-logo', 512x64px
 unsigned char sajdah_logo_bitmap [] = {
