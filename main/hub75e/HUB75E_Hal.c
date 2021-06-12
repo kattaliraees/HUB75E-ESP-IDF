@@ -22,25 +22,24 @@
 #define HUB75E_G1_Pin		12
 #define HUB75E_B1_Pin		13
 #define HUB75E_R1_Pin		14
-#define STATUS_LED_Pin		15
 
 void HUB75E_GPIO_Init(void) {
 
-	gpio_set_direction(1, GPIO_MODE_DEF_OUTPUT);
-	gpio_set_direction(2, GPIO_MODE_DEF_OUTPUT);
-	gpio_set_direction(3, GPIO_MODE_DEF_OUTPUT);
-	gpio_set_direction(4, GPIO_MODE_DEF_OUTPUT);
-	gpio_set_direction(5, GPIO_MODE_DEF_OUTPUT);
-	gpio_set_direction(6, GPIO_MODE_DEF_OUTPUT);
-	gpio_set_direction(7, GPIO_MODE_DEF_OUTPUT);
-	gpio_set_direction(8, GPIO_MODE_DEF_OUTPUT);
-	gpio_set_direction(9, GPIO_MODE_DEF_OUTPUT);
-	gpio_set_direction(10, GPIO_MODE_DEF_OUTPUT);
-	gpio_set_direction(11, GPIO_MODE_DEF_OUTPUT);
-	gpio_set_direction(12, GPIO_MODE_DEF_OUTPUT);
-	gpio_set_direction(13, GPIO_MODE_DEF_OUTPUT);
-	gpio_set_direction(14, GPIO_MODE_DEF_OUTPUT);
-	gpio_set_direction(15, GPIO_MODE_DEF_OUTPUT);
+	gpio_set_direction(P2_LED_PWR_Pin, GPIO_MODE_DEF_OUTPUT);
+	gpio_set_direction(HUB75E_OE_Pin, GPIO_MODE_DEF_OUTPUT);
+	gpio_set_direction(HUB75E_LATCH_Pin, GPIO_MODE_DEF_OUTPUT);
+	gpio_set_direction(HUB75E_CLK_Pin, GPIO_MODE_DEF_OUTPUT);
+	gpio_set_direction(HUB75E_ADDR_D_Pin, GPIO_MODE_DEF_OUTPUT);
+	gpio_set_direction(HUB75E_ADDR_C_Pin, GPIO_MODE_DEF_OUTPUT);
+	gpio_set_direction(HUB75E_ADDR_B_Pin, GPIO_MODE_DEF_OUTPUT);
+	gpio_set_direction(HUB75E_ADDR_A_Pin, GPIO_MODE_DEF_OUTPUT);
+	gpio_set_direction(HUB75E_ADDR_E_Pin, GPIO_MODE_DEF_OUTPUT);
+	gpio_set_direction(HUB75E_G2_Pin, GPIO_MODE_DEF_OUTPUT);
+	gpio_set_direction(HUB75E_B2_Pin, GPIO_MODE_DEF_OUTPUT);
+	gpio_set_direction(HUB75E_R2_Pin, GPIO_MODE_DEF_OUTPUT);
+	gpio_set_direction(HUB75E_G1_Pin, GPIO_MODE_DEF_OUTPUT);
+	gpio_set_direction(HUB75E_B1_Pin, GPIO_MODE_DEF_OUTPUT);
+	gpio_set_direction(HUB75E_R1_Pin, GPIO_MODE_DEF_OUTPUT);
 }
 
 void HUB75E_DelayUs(int us) {
