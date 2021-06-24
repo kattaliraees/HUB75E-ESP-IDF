@@ -7,21 +7,21 @@
 #include "HUB75E_Hal.h"
 #include "driver/gpio.h"
 
-#define P2_LED_PWR_Pin		0
-#define HUB75E_OE_Pin		1
-#define HUB75E_LATCH_Pin	2
-#define HUB75E_CLK_Pin		3
-#define HUB75E_ADDR_D_Pin	4
-#define HUB75E_ADDR_C_Pin	5
-#define HUB75E_ADDR_B_Pin	6
-#define HUB75E_ADDR_A_Pin	7
-#define HUB75E_ADDR_E_Pin	8
-#define HUB75E_G2_Pin		9
-#define HUB75E_B2_Pin		10
-#define HUB75E_R2_Pin		11
-#define HUB75E_G1_Pin		12
-#define HUB75E_B1_Pin		13
-#define HUB75E_R1_Pin		14
+#define P2_LED_PWR_Pin		1
+#define HUB75E_OE_Pin		2
+#define HUB75E_LATCH_Pin	3
+#define HUB75E_CLK_Pin		4
+#define HUB75E_ADDR_D_Pin	5
+#define HUB75E_ADDR_C_Pin	6
+#define HUB75E_ADDR_B_Pin	7
+#define HUB75E_ADDR_A_Pin	8
+#define HUB75E_ADDR_E_Pin	9
+#define HUB75E_G2_Pin		10
+#define HUB75E_B2_Pin		11
+#define HUB75E_R2_Pin		12
+#define HUB75E_G1_Pin		13
+#define HUB75E_B1_Pin		14
+#define HUB75E_R1_Pin		15
 
 void HUB75E_GPIO_Init(void) {
 
