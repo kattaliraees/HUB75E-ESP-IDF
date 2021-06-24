@@ -1,5 +1,5 @@
 ### HUB75E Driver for ESP32, ESP32-S2, ESP32-C3, ESP32-S3, ESP32-C6
-HUB75E RGB LED Matrix Panel Driver. To port, provide GPIO HAL in HUB75E_Hal.c. Current implementaion is with ESP32 IDF
+HUB75E RGB LED Matrix Panel Driver. To port, provide GPIO HAL in HUB75E_Hal.c. Current implementaion is with ESP32 IDF v4.3
 
 ```C
 void app_main(void) {
